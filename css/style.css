@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../img/fondo2.jpg');
+    background-color: rgb(0, 0, 0) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#grilla{
+    background-image: url('../img/fondo2.jpg');
+    background-color: rgb(0, 0, 0) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header header"     
+    "nav section section" 
+    "footer footer footer";
+    gap:0px;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(19, 19, 82);
+    text-align: center;
+}
+
+nav{
+    background: linear-gradient(rgb(45, 40, 63), rgb(36, 36, 88), rgb(10, 10, 126));
+    grid-area: nav;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    color: ghostwhite;
+    font-size: 15px;
+        
+}
+
+a{
+    color: whitesmoke;
+    font-family: sans-serif;
+    text-decoration: none;
+   
+    
+    
+}
+
+section{
+    grid-area: section;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    height: 500px;
+    
+    
+}
+
+.presentacion__titulo{
+    text-align: left;
+    text-decoration: underline;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(65, 65, 65);
+    width: auto;
+}
+
+
+header{
+    background: linear-gradient(to right, rgb(49, 49, 167), rgb(64, 13, 122));
+    text-align: center;
+    color: whitesmoke;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: black 2px solid;
+    font-family: 'Dongle', sans-serif;
+    font-size: 32px;
+    
+
+    
+}
+
+.padreflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+nav ul li {
+    text-align: center;
+    list-style-type: none;
+    color: ghostwhite;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border: 2px groove grey;
+}
+
+
+#inputNav{
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer__flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.formularioContacto{
+    color: whitesmoke;
+}
+
+.titulo__secciones{
+    background: linear-gradient(to right, rgb(49, 49, 167), rgb(64, 13, 122));
+    text-align: center;
+    color: whitesmoke;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: black 2px solid;
+    font-family: 'Dongle', sans-serif;
+    font-size: 32px;
+}
+
+li a{
+    transition: all 0.1s;
+}
+
+li a:focus{
+    font-size: 25px;
+}
+
+#header_animation{
+    background: linear-gradient(to right, rgb(49, 49, 167), rgb(64, 13, 122));
+    animation-name: titulo_animado;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-start;
+    animation-direction: alternate;
+    
+
+}
+
+@keyframes titulo_animado {
+    0%{
+        background: linear-gradient(to top, rgb(49, 49, 167), rgb(64, 13, 122));
+        opacity: 0.5;
+    }
+
+    25%{
+        background: linear-gradient(to top, rgb(78, 78, 104), rgb(37, 74, 109));
+        opacity: 1;
+    }
+   
+
+    50%{
+        background: linear-gradient(to top, rgb(93, 65, 250), rgb(183, 29, 255));
+        opacity: 0.5;
+    }
+
+    75%{
+        background: linear-gradient(to top, rgb(44, 40, 78), rgb(38, 86, 150));
+        opacity: 1;
+    }
+
+    100%{
+        background: linear-gradient(to top, rgb(52, 52, 97), rgb(64, 13, 122));
+        opacity: 0.5;
+    }
+}
+
+
+
+
+@media screen and (min-width: 320px) {
+    #grilla{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+        gap: 10px;
+        grid-template-areas: 
+        "header"
+         "nav" 
+         "section" 
+         "footer";
+
+    }
+         
+    
+
+    nav ul li{
+        display: none;
+    }
+
+    #inputNav{
+        display: inline;
+       
+    }
+
+    #menuHamburguesa{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+ 
+    }
+    
+
+@media screen and (min-width: 700px) {
+    #grilla{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "header header" 
+        "nav section" 
+        "nav section" 
+        "footer footer";
+    }
+
+    nav ul li{
+        display: block;
+
+    }
+
+    #menuHamburguesa{
+        display: none;
+    }
+
+    }
