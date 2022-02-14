@@ -132,6 +132,56 @@ nav ul li {
     font-size: 32px;
 }
 
+li a{
+    transition: all 0.1s;
+}
+
+li a:focus{
+    font-size: 25px;
+}
+
+#header_animation{
+    background: linear-gradient(to right, rgb(49, 49, 167), rgb(64, 13, 122));
+    animation-name: titulo_animado;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-start;
+    animation-direction: alternate;
+    
+
+}
+
+@keyframes titulo_animado {
+    0%{
+        background: linear-gradient(to top, rgb(49, 49, 167), rgb(64, 13, 122));
+        opacity: 0.5;
+    }
+
+    25%{
+        background: linear-gradient(to top, rgb(78, 78, 104), rgb(37, 74, 109));
+        opacity: 1;
+    }
+   
+
+    50%{
+        background: linear-gradient(to top, rgb(93, 65, 250), rgb(183, 29, 255));
+        opacity: 0.5;
+    }
+
+    75%{
+        background: linear-gradient(to top, rgb(44, 40, 78), rgb(38, 86, 150));
+        opacity: 1;
+    }
+
+    100%{
+        background: linear-gradient(to top, rgb(52, 52, 97), rgb(64, 13, 122));
+        opacity: 0.5;
+    }
+}
+
+
+
 
 
 
