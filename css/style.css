@@ -152,6 +152,16 @@ li a:focus{
 
 }
 
+.card-text{
+    color: white;
+}
+
+.card{
+    object-fit: cover;
+    border: 1px solid white;
+    
+}
+
 @keyframes titulo_animado {
     0%{
         background: linear-gradient(to top, rgb(49, 49, 167), rgb(64, 13, 122));
