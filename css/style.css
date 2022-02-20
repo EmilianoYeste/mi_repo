@@ -229,6 +229,12 @@ li a:focus{
          "footer";
 
     }
+
+    .grilla_productos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
          
     
 
@@ -270,4 +276,13 @@ li a:focus{
         display: none;
     }
 
+    .grilla_productos{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 30px;
     }
+    
+    }
+
+    
