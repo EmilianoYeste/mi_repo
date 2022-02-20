@@ -125,9 +125,8 @@ nav ul li {
     background: linear-gradient(to right, rgb(49, 49, 167), rgb(64, 13, 122));
     text-align: center;
     color: whitesmoke;
-    height: 50px;
+    height: 100px;
     line-height: 50px;
-    border-bottom: black 2px solid;
     font-family: 'Dongle', sans-serif;
     font-size: 32px;
 }
@@ -149,6 +148,7 @@ li a:focus{
     animation-timing-function: step-start;
     animation-direction: alternate;
     
+    
 
 }
 
@@ -162,15 +162,37 @@ li a:focus{
     
 }
 
+.container-fluid{
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.grilla_productos{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 30px;
+}
+
+
+
 @keyframes titulo_animado {
     0%{
         background: linear-gradient(to top, rgb(49, 49, 167), rgb(64, 13, 122));
         opacity: 0.5;
+        
     }
 
     25%{
         background: linear-gradient(to top, rgb(78, 78, 104), rgb(37, 74, 109));
         opacity: 1;
+        
     }
    
 
