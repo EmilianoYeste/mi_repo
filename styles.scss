@@ -1,0 +1,19 @@
+@import "_variables";
+
+.padreflex{
+    li:hover{
+        background-color: $colorhover;
+    }
+      
+}
+
+.container-fluid{
+    a{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: large;
+        &:hover{
+            background-color: $colorhover;
+        }
+    }
+    
+}
